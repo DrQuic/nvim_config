@@ -38,4 +38,6 @@ return require('packer').startup(function(use)
             'JoosepAlviste/nvim-ts-context-commentstring'
         }
     })
+    
+    use({'ThePrimeagen/harpoon'})
 end)
