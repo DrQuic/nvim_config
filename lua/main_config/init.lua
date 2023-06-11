@@ -1,6 +1,6 @@
-require("antonio_config.packer")
-require("antonio_config.remapings")
-require("antonio_config.set")
+require("main_config.packer")
+require("main_config.remapings")
+require("main_config.set")
 function R(name)
     require("plenary.reload").reload_module(name)
 end

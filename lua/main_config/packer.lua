@@ -9,10 +9,7 @@ return require('packer').startup(function(use)
   -- theme onedark
   use({
         "nvim-telescope/telescope.nvim",
-        requires = {
-            { 'nvim-lua/plenary.nvim' },
-            {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-        },
+        requires = {'nvim-lua/plenary.nvim'},
     })
   use({'navarasu/onedark.nvim', as = "onedark", config = function() vim.cmd("colorscheme onedark")end})
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -28,9 +25,9 @@ return require('packer').startup(function(use)
         "L3MON4D3/LuaSnip"
     })
 
-    --use({
-        --"windwp/nvim-autopairs"
-    --})
+    use({
+        "windwp/nvim-autopairs"
+    })
     use("mbbill/undotree")
     use({
         'numToStr/Comment.nvim',
